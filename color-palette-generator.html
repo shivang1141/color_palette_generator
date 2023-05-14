@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Palette Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Color Palette Generator</h1>
+
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="toggleTheme">
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <button id="generatePalette">Generate Palette</button>
+  <div id="paletteContainer"></div>
+
+  <div class="controls">
+    <label for="colorCount">Number of colors:</label>
+    <select id="colorCount">
+      <option value="3">3</option>
+      <option value="5" selected>5</option>
+      <option value="7">7</option>
+    </select>
+  </div>
+
+  <div id="paletteHistoryContainer" style="display: none;">
+    <div class="historyHeader">
+      <h2>Palette History</h2>
+      <button id="clearHistory" style="display: none;">Clear</button>
+    </div>
+    <div id="paletteHistory"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
